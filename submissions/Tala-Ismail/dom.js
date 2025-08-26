@@ -55,6 +55,7 @@ div.classList.add('authenticated', 'highlight');
 
 console.log( div.classList.contains('card')); 
 
-div.classList.remove('card');
-
-console.log(div.className); 
+if (div.classList.contains('card')) {
+  div.classList.remove('card');
+}
+console.log(div.className);
